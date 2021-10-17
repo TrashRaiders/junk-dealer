@@ -1,0 +1,21 @@
+syntax = "proto3";
+package messages;
+
+option go_package = "pkg/protos/messages";
+
+import "protos/messages/address.proto";
+import "protos/messages/contact.proto";
+import "protos/messages/coordinates.proto";
+
+message Shop {
+  string id = 1;
+  string owner_id = 2;
+  string name = 3;
+  string description = 4;
+  string type = 5;
+  Address address = 6;
+  Coordinates coordinates = 7;
+  Contact contact = 8;
+  repeated string tags = 9;
+  string website = 10;
+}
