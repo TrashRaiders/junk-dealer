@@ -1,0 +1,11 @@
+syntax = "proto3";
+package protos;
+
+option go_package = "pkg/protos";
+
+import "protos/shop.proto";
+import "protos/reply.proto";
+
+service ShopService {
+  rpc createShop (Shop) returns (Reply) {}
+}
