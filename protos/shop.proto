@@ -1,11 +1,11 @@
 syntax = "proto3";
-package messages;
+package protos;
 
-option go_package = "pkg/protos/messages";
+option go_package = "pkg/protos";
 
-import "protos/messages/address.proto";
-import "protos/messages/contact.proto";
-import "protos/messages/coordinates.proto";
+import "protos/address.proto";
+import "protos/contact.proto";
+import "protos/coordinates.proto";
 
 message Shop {
   string id = 1;
