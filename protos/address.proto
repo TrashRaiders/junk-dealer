@@ -1,0 +1,12 @@
+syntax = "proto3";
+package protos;
+
+option go_package = "pkg/protos";
+
+message Address {
+  string country = 1;
+  string postal_code = 2;
+  string city = 3;
+  string street = 4;
+  string street_number = 5;
+}

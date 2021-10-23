@@ -1,0 +1,25 @@
+syntax = "proto3";
+package protos;
+
+option go_package = "pkg/protos";
+
+import "address.proto";
+import "contact.proto";
+import "coordinates.proto";
+
+message Shop {
+  string id = 1;
+  string owner_id = 2;
+  string name = 3;
+  string description = 4;
+  string type = 5;
+  Address address = 6;
+  Coordinates coordinates = 7;
+  Contact contact = 8;
+  repeated string tags = 9;
+  string website = 10;
+}
+
+message ShopRequest {
+  string sho_id = 1;
+}

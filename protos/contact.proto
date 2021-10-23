@@ -1,0 +1,12 @@
+syntax = "proto3";
+package protos;
+
+option go_package = "pkg/protos";
+
+message Contact {
+  string email = 1;
+  string phone = 2;
+  string whats_app = 3;
+  string facebook = 4;
+  string twitter = 5;
+}
