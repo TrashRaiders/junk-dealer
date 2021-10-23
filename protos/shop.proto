@@ -3,9 +3,9 @@ package protos;
 
 option go_package = "pkg/protos";
 
-import "protos/address.proto";
-import "protos/contact.proto";
-import "protos/coordinates.proto";
+import "address.proto";
+import "contact.proto";
+import "coordinates.proto";
 
 message Shop {
   string id = 1;
@@ -18,4 +18,8 @@ message Shop {
   Contact contact = 8;
   repeated string tags = 9;
   string website = 10;
+}
+
+message ShopRequest {
+  string sho_id = 1;
 }

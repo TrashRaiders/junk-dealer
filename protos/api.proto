@@ -3,9 +3,10 @@ package protos;
 
 option go_package = "pkg/protos";
 
-import "protos/shop.proto";
-import "protos/reply.proto";
+import "shop.proto";
+import "reply.proto";
 
 service ShopService {
   rpc createShop (Shop) returns (Reply) {}
+  rpc getShop (ShopRequest) returns (Shop) {}
 }
